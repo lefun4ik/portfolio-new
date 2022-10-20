@@ -4,11 +4,18 @@
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
+	min-height: 400px;
 	&__title {
 		font-size: 56px;
 		line-height: 150%;
 		letter-spacing: -0.02em;
 		text-align: center;
+		@media (max-width: 768px) {
+			font-size: 35px;
+		}
+		@media (max-width: 374px) {
+			font-size: 25px;
+		}
 		span {
 			font-weight: 300;
 			color: rgba(227, 228, 230, 0.55);

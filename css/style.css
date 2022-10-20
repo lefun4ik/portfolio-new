@@ -55,6 +55,11 @@ body {
   padding: 34px 0px;
   background-color: #010208;
 }
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 0px;
+  }
+}
 .header__container {
   display: flex;
   align-items: center;
@@ -69,7 +74,7 @@ body {
   transition: transform 0.4s;
 }
 .header .menu__list.active {
-  transform: translateY(0);
+  transform: translateX(0);
 }
 .header .menu__list li + li {
   margin-left: 32px;
@@ -90,7 +95,7 @@ body {
     background-color: #202020;
     flex-direction: column;
     justify-content: center;
-    transform: translateY(-100%);
+    transform: translateX(-100%);
   }
 }
 .header .menu__link {
@@ -177,12 +182,23 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  min-height: 400px;
 }
 .hero__title {
   font-size: 56px;
   line-height: 150%;
   letter-spacing: -0.02em;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 374px) {
+  .hero__title {
+    font-size: 25px;
+  }
 }
 .hero__title span {
   font-weight: 300;
@@ -205,11 +221,21 @@ body {
 .clients {
   padding: 80px 0px 130px;
 }
+@media (max-width: 768px) {
+  .clients {
+    padding: 40px 0px;
+  }
+}
 .clients__title {
   max-width: 520px;
   font-weight: 600;
   font-size: 40px;
   line-height: 150%;
+}
+@media (max-width: 576px) {
+  .clients__title {
+    font-size: 30px;
+  }
 }
 .clients__title span {
   font-weight: 300;
@@ -218,14 +244,22 @@ body {
 .clients__title:not(:last-child) {
   margin-bottom: 95px;
 }
+@media (max-width: 576px) {
+  .clients__title:not(:last-child) {
+    margin-bottom: 45px;
+  }
+}
 .clients__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: 30px;
 }
-.clients li + li {
-  margin-left: 20px;
+@media (max-width: 904px) {
+  .clients__list {
+    justify-content: space-evenly;
+  }
 }
 
 .works {

@@ -6,6 +6,9 @@
 	right: 0;
 	padding: 34px 0px;
 	background-color: #010208;
+	@media (max-width: 768px) {
+		padding: 20px 0px;
+	}
 	&__container {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -30,7 +33,7 @@
 			align-items: center;
 			transition: transform 0.4s;
 			&.active {
-				transform: translateY(0);
+				transform: translateX(0);
 			}
 			li + li {
 				margin-left: 32px;
@@ -48,7 +51,7 @@
 				background-color: #202020;
 				flex-direction: column;
 				justify-content: center;
-				transform: translateY(-100%);
+				transform: translateX(-100%);
 			}
 		}
 		&__link {
