@@ -2,9 +2,22 @@ body {
 	background-color: #010208;
 	font-family: 'Work Sans', sans-serif;
 	color: #E3E4E6;
+	&.lock {
+		overflow: hidden;
+	}
 }
 .container {
 	max-width: 1245px;
 	margin: 0 auto;
 	padding: 0 15px;
+}
+.clients,
+.works {
+	scroll-margin-top: 10px;
+	@media (max-width: 576px) {
+		scroll-margin-top: 20px;
+	}
+}
+.about {
+	scroll-margin-top: 30px;
 }
