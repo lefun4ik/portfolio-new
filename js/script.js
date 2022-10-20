@@ -11,9 +11,9 @@ if(burger && menu) {
 
 	menu.querySelectorAll('a').forEach(link => {
 		link.addEventListener('click', () => {
-			burger.classList.toggle('active')
-			menu.classList.toggle('active')
-			body.classList.toggle('lock');
+			burger.classList.remove('active')
+			menu.classList.remove('active')
+			body.classList.remove('lock');
 		})
 	})
 
