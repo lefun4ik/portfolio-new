@@ -1,0 +1,11 @@
+body {
+  background-color: #010208;
+  font-family: "Work Sans", sans-serif;
+  color: #E3E4E6;
+}
+
+.container {
+  max-width: 1245px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

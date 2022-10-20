@@ -1,0 +1,30 @@
+.hero {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	&__title {
+		font-size: 56px;
+		line-height: 150%;
+		letter-spacing: -0.02em;
+		text-align: center;
+		span {
+			font-weight: 300;
+			color: rgba(227, 228, 230, 0.55);
+		}
+	}
+	&__arrow {
+		position: absolute;
+		left: 50%;
+		bottom: 42px;
+		transform: translateX(-50%) rotate(90deg);
+		width: 40px;
+		height: 40px;
+		background: transparent url("../img/icons/arrow.svg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		border: none;
+		cursor: pointer;
+	}
+}

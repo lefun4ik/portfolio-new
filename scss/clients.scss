@@ -1,0 +1,25 @@
+.clients {
+	padding: 80px 0px 130px;
+	&__title {
+		max-width: 520px;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 150%;
+		span {
+			font-weight: 300;
+			color: rgba(227, 228, 230, 0.55);
+		}
+	}
+	&__title:not(:last-child) {
+		margin-bottom: 95px;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__item + &__item {
+		margin-left: 20px;
+	}
+}
