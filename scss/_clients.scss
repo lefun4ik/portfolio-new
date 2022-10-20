@@ -19,7 +19,7 @@
 		align-items: center;
 		flex-wrap: wrap;
 	}
-	&__item + &__item {
+	li + li {
 		margin-left: 20px;
 	}
 }
