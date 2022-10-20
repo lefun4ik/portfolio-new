@@ -1,11 +1,20 @@
 .works {
 	padding: 80px 0 120px;
+	@media (max-width: 768px) {
+		padding: 40px 0;
+	}
 	&__title {
 		margin-bottom: 97px;
 		font-weight: 600;
 		font-size: 40px;
 		line-height: 150%;
 		color: #e3e4e6;
+		@media (max-width: 768px) {
+			margin-bottom: 45px;
+		}
+		@media (max-width: 576px) {
+			font-size: 30px;
+		}
 		span {
 			font-weight: 300;
 			color: rgba(227, 228, 230, 0.55);
@@ -17,12 +26,25 @@
 		display: flex;
 		justify-content: space-between;
 		gap: 32px;
+		@media (max-width: 768px) {
+			flex-direction: column;
+			justify-content: stretch;
+			align-items: center;
+			text-align: center;
+		}
 	}
 	&__item + &__item {
 		margin-top: 97px;
+		@media (max-width: 768px) {
+			margin-top: 45px;
+		}
 	}
 	&__item_reverse {
 		flex-direction: row-reverse;
+		@media (max-width: 768px) {
+			flex-direction: column;
+			justify-content: stretch;
+		}
 	}
 	&__image {
 		overflow: hidden;
@@ -48,6 +70,9 @@
 		font-weight: 600;
 		font-size: 32px;
 		line-height: 150%;
+		@media (max-width: 425px) {
+			font-size: 24px;
+		}
 		span {
 			font-weight: 300;
 			color: rgba(227, 228, 230, 0.55);
